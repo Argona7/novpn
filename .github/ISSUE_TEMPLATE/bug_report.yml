@@ -1,0 +1,30 @@
+name: Bug report
+description: Something does not bypass the VPN, or something broke
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Which site, what you expected, what you saw.
+    validations:
+      required: true
+  - type: textarea
+    id: status
+    attributes:
+      label: novpn status
+      description: Output of `novpn status` and `novpn check <site>`. Remove your user name and exit node name.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: novpn logs
+      description: Output of `novpn logs -n 80`. Remove anything private.
+      render: text
+  - type: input
+    id: vpn
+    attributes:
+      label: VPN client and macOS version
+      placeholder: Tailscale 1.98 exit node, macOS 26.1

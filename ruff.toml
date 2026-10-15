@@ -1,0 +1,8 @@
+line-length = 120
+
+[lint]
+select = ["E", "F", "W", "B"]
+
+[lint.per-file-ignores]
+# SVG templates: long attribute lines read better unwrapped.
+"assets/make_art.py" = ["E501"]

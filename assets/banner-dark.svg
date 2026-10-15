@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img"
+     aria-label="novpn: keep the VPN on, chosen sites go straight through your ISP">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f17"/><stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2ea043" stop-opacity="0.28"/><stop offset="1" stop-color="#2ea043" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect x="1" y="1" width="1278" height="418" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1280" height="420" fill="url(#bg)"/>
+    <rect width="1280" height="420" fill="url(#grid)"/>
+    <ellipse cx="1100" cy="302" rx="260" ry="140" fill="url(#glow)"/>
+  </g>
+  <rect x="1" y="1" width="1278" height="418" rx="24" fill="none" stroke="#1f2937" stroke-width="2"/>
+
+  <g transform="translate(72 92) scale(1.4375)">
+  <circle cx="10" cy="32" r="7" fill="#f0f6fc"/>
+  <path d="M17 32 C 30 32, 32 14, 46 14 L 56 14" fill="none" stroke="#6e7681" stroke-width="5"
+        stroke-linecap="round" stroke-dasharray="2 8"/>
+  <path d="M17 32 C 30 32, 32 50, 46 50 L 54 50" fill="none" stroke="#3fb950" stroke-width="6" stroke-linecap="round"/>
+  <path d="M51 43 L 60 50 L 51 57" fill="none" stroke="#3fb950" stroke-width="6" stroke-linecap="round"
+        stroke-linejoin="round"/>
+</g>
+  <text x="176" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="112" font-weight="800" letter-spacing="-4" fill="#f0f6fc">novpn</text>
+  <text x="76" y="262" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" font-weight="650" fill="#f0f6fc">Keep the VPN on.</text>
+  <text x="76" y="304" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="30" fill="#8b949e">Chosen sites go straight through your ISP.</text>
+  <text x="76" y="352" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" fill="#8b949e"><tspan fill="#3fb950">$</tspan> novpn add ozon.ru</text>
+
+  <!-- the split -->
+  <path d="M 790 215 C 860 215, 870 128, 950 128 L 1150 128" fill="none" stroke="#484f58" stroke-width="3" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <path d="M 790 215 C 860 215, 870 302, 950 302 L 1150 302" fill="none" stroke="#3fb950" stroke-width="4" stroke-linecap="round"/>
+  
+  <circle r="5" fill="#7ee787" opacity="0">
+    <animateMotion dur="2.4s" begin="0.0s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 302, 950 302 L 1150 302"/>
+    <animate attributeName="opacity" dur="2.4s" begin="0.0s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="5" fill="#7ee787" opacity="0">
+    <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 302, 950 302 L 1150 302"/>
+    <animate attributeName="opacity" dur="2.4s" begin="0.8s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="5" fill="#7ee787" opacity="0">
+    <animateMotion dur="2.4s" begin="1.6s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 302, 950 302 L 1150 302"/>
+    <animate attributeName="opacity" dur="2.4s" begin="1.6s" repeatCount="indefinite" values="0;1;1;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="4" fill="#6e7681" opacity="0">
+    <animateMotion dur="4s" begin="0s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 128, 950 128 L 1150 128"/>
+    <animate attributeName="opacity" dur="4s" begin="0s" repeatCount="indefinite" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="4" fill="#6e7681" opacity="0">
+    <animateMotion dur="4s" begin="1s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 128, 950 128 L 1150 128"/>
+    <animate attributeName="opacity" dur="4s" begin="1s" repeatCount="indefinite" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="4" fill="#6e7681" opacity="0">
+    <animateMotion dur="4s" begin="2s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 128, 950 128 L 1150 128"/>
+    <animate attributeName="opacity" dur="4s" begin="2s" repeatCount="indefinite" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <circle r="4" fill="#6e7681" opacity="0">
+    <animateMotion dur="4s" begin="3s" repeatCount="indefinite" path="M 790 215 C 860 215, 870 128, 950 128 L 1150 128"/>
+    <animate attributeName="opacity" dur="4s" begin="3s" repeatCount="indefinite" values="0;0.9;0.9;0" keyTimes="0;0.1;0.85;1"/>
+  </circle>
+  <rect x="955" y="104" width="150" height="48" rx="24" fill="#111827" stroke="#484f58" stroke-width="2"/>
+  <text x="1030" y="134" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#6e7681">VPN tunnel</text>
+  
+  <g opacity="0">
+    <rect x="-48.1" y="-15" width="96.2" height="30" rx="15" fill="#11281a" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="0" y="5.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#3fb950">ozon.ru</text>
+    <animateMotion dur="8s" begin="0s" repeatCount="indefinite" path="M 990 268 L 1052 268" keyPoints="0;1;1" keyTimes="0;0.25;1"
+                   calcMode="linear"/>
+    <animate attributeName="opacity" dur="8s" begin="0s" repeatCount="indefinite"
+             values="0;1;1;0;0" keyTimes="0;0.04;0.2;0.25;1"/>
+  </g>
+  <g opacity="0">
+    <rect x="-74.6" y="-15" width="149.2" height="30" rx="15" fill="#11281a" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="0" y="5.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#3fb950">gosuslugi.ru</text>
+    <animateMotion dur="8s" begin="2s" repeatCount="indefinite" path="M 990 268 L 1052 268" keyPoints="0;1;1" keyTimes="0;0.25;1"
+                   calcMode="linear"/>
+    <animate attributeName="opacity" dur="8s" begin="2s" repeatCount="indefinite"
+             values="0;1;1;0;0" keyTimes="0;0.04;0.2;0.25;1"/>
+  </g>
+  <g opacity="0">
+    <rect x="-42.8" y="-15" width="85.6" height="30" rx="15" fill="#11281a" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="0" y="5.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#3fb950">vk.com</text>
+    <animateMotion dur="8s" begin="4s" repeatCount="indefinite" path="M 990 268 L 1052 268" keyPoints="0;1;1" keyTimes="0;0.25;1"
+                   calcMode="linear"/>
+    <animate attributeName="opacity" dur="8s" begin="4s" repeatCount="indefinite"
+             values="0;1;1;0;0" keyTimes="0;0.04;0.2;0.25;1"/>
+  </g>
+  <g opacity="0">
+    <rect x="-69.3" y="-15" width="138.6" height="30" rx="15" fill="#11281a" stroke="#3fb950" stroke-width="1.5"/>
+    <text x="0" y="5.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#3fb950">sberbank.ru</text>
+    <animateMotion dur="8s" begin="6s" repeatCount="indefinite" path="M 990 268 L 1052 268" keyPoints="0;1;1" keyTimes="0;0.25;1"
+                   calcMode="linear"/>
+    <animate attributeName="opacity" dur="8s" begin="6s" repeatCount="indefinite"
+             values="0;1;1;0;0" keyTimes="0;0.04;0.2;0.25;1"/>
+  </g>
+
+  <circle cx="770" cy="215" r="34" fill="#0f1622" stroke="#263041" stroke-width="2"/>
+  <g transform="translate(770 215)" fill="none" stroke="#f0f6fc" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="-15" y="-11" width="30" height="20" rx="2.5"/><path d="M -20 13 L 20 13" stroke-linecap="round"/>
+  </g>
+  <text x="770" y="275" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">your Mac</text>
+
+  <circle cx="1176" cy="128" r="26" fill="#0f1622" stroke="#484f58" stroke-width="2"/>
+  <g transform="translate(1176 128)" fill="none" stroke="#6e7681" stroke-width="2">
+    <circle r="11"/><ellipse rx="5" ry="11"/><path d="M -11 0 L 11 0"/>
+  </g>
+  <text x="1176" y="180" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" fill="#8b949e">exit node</text>
+
+  <circle cx="1176" cy="302" r="30" fill="#0f1622" stroke="#3fb950" stroke-width="2.5"/>
+  <g transform="translate(1176 302)" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M -12 2 L 0 -10 L 12 2"/><path d="M -8 -1 L -8 11 L 8 11 L 8 -1"/>
+  </g>
+  <text x="1176" y="358" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#3fb950">your ISP</text>
+</svg>
