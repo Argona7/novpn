@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-10-16
+
+- `novpn add` prints how to clear the new site's cookies (a Chrome link per site and the Safari path): Ozon and others remember a VPN verdict in cookies.
+- README: this step is now part of Quick start.
+
 ## 1.0.0 — 2026-10-15
 
 - Per-site registry: `novpn add ozon.ru` covers every subdomain, URLs and Cyrillic domains are accepted.

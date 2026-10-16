@@ -35,7 +35,7 @@ import novpn_pf  # noqa: E402
 import novpn_rtsock  # noqa: E402
 import novpn_russia  # noqa: E402
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 DNS_HOST = "127.0.0.1"
 DNS_PORT = 53535  # macOS intercepts port 53 before userspace listeners see it
@@ -1024,7 +1024,18 @@ def cmd_add(args) -> int:
         print(f"! {raw}: not a domain", file=sys.stderr)
     if added:
         report_daemon(added, active=True)
+        print(cookie_hint(added))
     return 1 if invalid else 0
+
+
+def cookie_hint(domains) -> str:
+    """How to clear the cookies a site set while it saw the VPN: Ozon and others remember the verdict there."""
+    if not domains:
+        return ""
+    lines = [paint("important: a site that already saw your VPN remembers it in cookies; clear them once", YELLOW)]
+    lines += [f"  chrome://settings/content/all?searchSubpage={domain}" for domain in domains]
+    lines.append(paint("  Safari: Settings > Privacy > Manage Website Data, search the site, Remove", DIM))
+    return "\n".join(lines)
 
 
 def cmd_rm(args) -> int:

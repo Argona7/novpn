@@ -51,7 +51,7 @@ Turning the VPN off for one purchase breaks everything else you use it for, and 
 - **Instant.** A change is applied in about 0.3 s. A connection the browser already had open through the VPN is reset and comes back direct within a second, so open tabs switch over by themselves.
 - **No leaks.** A pf kill switch refuses every address novpn routed directly on any interface other than your physical connection, so it cannot slip back into the VPN. In Russia mode, IPv6 to Russian networks that would enter the tunnel is refused too, and browsers fall back to IPv4 at once.
 - **Survives real life.** Wi-Fi changes, sleep, `route flush` and crashes are handled; routes are spot-checked every 2 seconds. `--uninstall` removes everything it added except your site list.
-- **Zero dependencies.** About 1,900 lines of Python standard library that ships with macOS, covered by 88 tests.
+- **Zero dependencies.** About 1,900 lines of Python standard library that ships with macOS, covered by 92 tests.
 
 ## Quick start
 
@@ -61,6 +61,9 @@ sudo ./install.sh          # once: installs the background daemon
 novpn add ozon.ru          # this site now skips the VPN
 novpn check ozon.ru        # proof: "en0 ... direct"
 ```
+
+> [!IMPORTANT]
+> **Clear the site's cookies once after `novpn add`.** Ozon and other sites remember that they saw a VPN and keep showing the block even when the traffic is already direct. In Chrome open `chrome://settings/content/all?searchSubpage=ozon.ru` and delete the site's data; in Safari use Settings > Privacy > Manage Website Data. `novpn add` prints these links for every site you add.
 
 ## Install
 
@@ -193,7 +196,7 @@ In the browser these sites decide by the address they see, and with novpn they s
 
 1. Run `novpn check <site>`. Every line should say `direct`.
 2. The page may load parts from other domains. Open DevTools → Network, find the domains it talks to and add them, or turn on Russia mode if they are Russian.
-3. Reload the tab. If a private window works and the normal one does not, the site remembered you from before: clear its cookies (site settings → Cookies and site data).
+3. Clear the site's cookies (see [Quick start](#quick-start)). If a private window works and the normal one does not, this is exactly the case: the site remembered your VPN from before.
 </details>
 
 <details>
